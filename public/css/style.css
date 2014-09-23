@@ -4,9 +4,28 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+body:hover .image {
+  bottom: 35px;
+}
+
 .image {
-  background-size: cover;
+  background-color: #000;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
   min-width: 100%;
   min-height: 100vh;
   position: absolute;
+    z-index: 5;
+    bottom: 0;
+  -webkit-transition: bottom .3s ease-in-out;
+}
+
+iframe {
+  position: absolute;
+    bottom: 0;
+    z-index: 1;
+  max-height: 35px;
+  height: auto;
+  width: 100%;
 }
